@@ -55,7 +55,7 @@ function endGame(playerName) {
     clearInterval(gameInterval);
     clearInterval(timerInterval);
 
-    alert(Temps écoulé ! ${playerName}, ton score est : ${score});
+    alert(`Temps écoulé ! ${playerName}, ton score est : ${score}`);
 
     if (score > bestScore) {
         bestScore = score;
@@ -64,3 +64,4 @@ function endGame(playerName) {
         alert(🎉 Nouveau record ! Score : ${score});
     }
 }
+
