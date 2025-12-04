@@ -61,7 +61,8 @@ function endGame(playerName) {
         bestScore = score;
         localStorage.setItem("bestScore", bestScore);
         document.getElementById("bestScore").textContent = bestScore;
-        alert(🎉 Nouveau record ! Score : ${score});
+       alert(`🎉 Nouveau record ! Score : ${score}`);
     }
 }
+
 
