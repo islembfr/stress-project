@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Test de Stress</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Test de Stress</h1>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="quiz.html">Test de Stress</a>
+        <a href="game.html">Mini-jeu</a>
+    </nav>
+</header>
+
+<section class="container">
+    <h2>Réponds aux questions :</h2>
+
+    <form id="stressQuiz">
+        <label>1. Te sens-tu fatigué(e) souvent ?</label>
+        <select name="q1">
+            <option value="0">Non</option>
+            <option value="1">Parfois</option>
+            <option value="2">Oui</option>
+        </select>
+
+        <label>2. As-tu du mal à te concentrer ?</label>
+        <select name="q2">
+            <option value="0">Non</option>
+            <option value="1">Parfois</option>
+            <option value="2">Oui</option>
+        </select>
+
+        <label>3. Dors-tu mal ou pas assez ?</label>
+        <select name="q3">
+            <option value="0">Non</option>
+            <option value="1">Parfois</option>
+            <option value="2">Oui</option>
+        </select>
+
+        <button type="button" onclick="calculateStress()">Voir le résultat</button>
+    </form>
+
+    <h3 id="result"></h3>
+</section>
+
+<script src="js/quiz.js"></script>
+
+<footer>
+    Projet – Préparation à l’environnement professionnel
+    Realisé par Bouafoura Islem & Hichri Abderrahmen
+</footer>
+
+</body>
+</html>
