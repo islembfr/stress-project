@@ -38,7 +38,7 @@ function createBubble() {
     area.appendChild(bubble);
 
     // Supprimer la bulle après 4 secondes
-    setTimeout(() => bubble.remove(), 4000);
+    setTimeout(() => bubble.remove(), 6000);
 }
 
 // ----- DEMARRER LE JEU -----
@@ -48,7 +48,7 @@ function startGame(playerName) {
     document.getElementById("score").textContent = score;
     document.getElementById("time").textContent = timeLeft;
 
-    gameInterval = setInterval(createBubble, 800);
+    gameInterval = setInterval(createBubble, 400);
 
     timerInterval = setInterval(() => {
         timeLeft--;
@@ -74,3 +74,4 @@ function endGame(playerName) {
         alert(`🎉 Nouveau record ! Score : ${score}`);
     }
 }
+
